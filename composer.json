@@ -28,5 +28,9 @@
             "PornFyre\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "maser"
+        }
+    }
 }
