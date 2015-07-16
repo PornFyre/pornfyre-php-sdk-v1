@@ -30,7 +30,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "maser"
+            "dev-master": "1.x-dev"
         }
     }
 }
