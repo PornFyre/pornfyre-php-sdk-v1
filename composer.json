@@ -5,6 +5,7 @@
 	"type": "library",
 	"homepage": "http://pornfyre.com/developers/php-sdk",
 	"license": "MIT",
+    "verion": "1.0.0-dev",
 	"authors": [
 		{
 			"name": "Pornfyre",
