@@ -5,11 +5,11 @@ use GuzzleHttp\Exception\ClientException as ClientException;
 
 class Pornfyre {
 
-	private $options;
+    private $options;
 
-	protected $encodingType = PHP_QUERY_RFC1738;
+    protected $encodingType = PHP_QUERY_RFC1738;
 
-	protected $scopes = ['basic'];
+    protected $scopes = ['basic'];
 
     protected $scopeSeparator = ',';
 
@@ -29,7 +29,7 @@ class Pornfyre {
 
     protected function getTokenUrl()
     {
-        return 'http://pornfyre.com/oauth/access_token';
+        return 'http://pornfyre.com/oauth/token';
     }
 
     protected function getUserByToken($token)
