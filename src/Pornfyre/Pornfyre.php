@@ -24,17 +24,17 @@ class Pornfyre {
 
 	protected function getAuthUrl($state)
     {
-        return $this->buildAuthUrlFromBase('http://pornfyre.com/oauth/authorize', $state);
+        return $this->buildAuthUrlFromBase('http://sharesome.com/oauth/authorize', $state);
     }
 
     protected function getTokenUrl()
     {
-        return 'http://pornfyre.com/oauth/token';
+        return 'http://sharesome.com/oauth/token';
     }
 
     protected function getUserByToken($token)
     {
-        $response = $this->getHttpClient()->get('http://pornfyre.com/api/v1/user', [
+        $response = $this->getHttpClient()->get('http://sharesome.com/api/v1/user', [
             'headers' => [
                 'Authorization' => 'Bearer '.$token,
             ],
@@ -48,7 +48,6 @@ class Pornfyre {
         return [
             'id'            => $user['user']['id'],
             'username'      => $user['user']['username'],
-            'email'         => $user['user']['email'],
             'first_name'    => $user['user']['first_name'],
             'last_name'     => $user['user']['last_name'],
             'star'          => $user['user']['last_name'],
